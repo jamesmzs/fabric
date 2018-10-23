@@ -1,0 +1,12 @@
+#!/bin/bash
+#set parameter
+
+date=`date +%Y%m%d`
+basepath=$(cd `dirname $0`; pwd)
+destdir=$basepath/$date
+selinux=/etc/selinux/config
+user=trx
+file=/etc/sudoers
+iptables=firewalld.service
+sysctlfile=/etc/sysctl.conf
+nofile=/etc/security/limits.conf
